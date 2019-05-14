@@ -12,20 +12,21 @@ body
 }
 .section {
 	position: relative;
-	width: 100%;
-	height: 70px;
+	width: 100vw;
+	height: 72px;
 	padding-left: 7.2vw;
 	padding-right: 7.5vw;
-	left: 50%;
-	transform: translateX(-50%);
 }
 .top
 {
 	position: fixed;
 	top: 0;
-	background-color: #fff;
 	display: flex;
-	box-shadow: 0 0 15px #111;
+	
+	background-color: #fff;
+	box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.1);
+
+	z-index: 7;
 }
 .top > div {
 	height: 100%;
@@ -175,4 +176,72 @@ body
 	color: #fff;
 	background-color: #262626;
 	border: 1px solid #262626;
+}
+
+
+
+.card-wrapper {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+
+	width: 33.33%;
+	height: 357px;
+	padding-left: 32px;
+}
+.card-wrappper a {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+
+	line-height: 24px;
+	font-size: 16px;
+	width: 199%;
+	transition: 400ms ease 0s; 
+
+	border: 2px dotted #000;
+}
+.card-photo {
+	background-image: url("imgs/mac.png");
+	border-radius: 4px;
+	background-size: cover;
+	background-position: center center;
+	height: 240px;
+	background-color: rgb(117, 117, 117);
+	position: relative;	
+}
+.card-name {
+	padding-top: 10px;
+	color: #262626;
+	line-height: 24px;
+	font-size: 16px;
+	position: relative;
+}
+.card-description {
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	color: #757575;
+}
+.card-description > p:last-child {
+	line-height: 20px;
+	font-size: 14px;
+	color: #262626;
+	background-color: #f5f5f5;
 }
