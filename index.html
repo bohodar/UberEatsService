@@ -3,7 +3,7 @@
 <head>
 	<title>UberEats Service - Доставка їжі від ресторану до дому</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
 	<meta name="description" content="Користувацький макет сторінки сайту ubereats.com, зверстаний Колісником Богодаром, fe_on_feb19">
@@ -13,8 +13,8 @@
 	<section id="main-container">
 		<header id="top" class="top section">
 			<div class="top__leftbox top__path">
-				<a href="#top">
-					<img src="imgs/logo.svg" alt="" class="top__leftbox--logo" />
+				<a href="#main-container">
+					<img src="imgs/logo.svg" alt="Uber Eats Service, main page" class="top__leftbox--logo" />
 				</a>
 			</div>
 			<div class="top__centerbox top__path">
@@ -232,13 +232,13 @@
 								<span><span style="color: #45a144">#</span>UberEats</span>
 							</div>
 							<div class="footer__titles__left-part--social-networks">
-								<img class="social-network-img" src="imgs/facebook.svg" alt="Our facebook off-group" />
-								<img class="social-network-img" src="imgs/twitter.svg" alt="Our twitter off-group" />
-								<img class="social-network-img" src="imgs/instagram.svg" alt="Our instagram off-channel" />
+								<a target="_blank" href="https://www.facebook.com/ubereats"><img class="social-network-img" src="imgs/facebook.svg" alt="Our facebook off-group" /></a>
+								<a target="_blank" href="https://www.twitter.com/ubereats"><img class="social-network-img" src="imgs/twitter.svg" alt="Our twitter off-group" /></a>
+								<a target="_blank" href="https://www.instagram.com/ubereats"><img class="social-network-img" src="imgs/instagram.svg" alt="Our instagram off-channel" /></a>
 							</div>
 						</div>
 						<div class="footer__titles__part footer__titles__middle-part">
-							<a href="javascript.void(0)">About UberEats</a>
+							<a href="https://about.ubereats.com/" target="_blank">About UberEats</a>
 							<a href="javascript.void(0)">Become a Delivery Partner</a>
 							<a href="javascript.void(0)">Become a Restaurant Partner</a>
 						</div>
@@ -252,9 +252,11 @@
 					<div class="line"></div>
 					<div class="footer__downloads">
 						<div class="footer__downloads--btn">
-							<img src="imgs/appstore.svg" alt="download UberEats app from appstore" /></div>
+							<a href="https://itunes.apple.com/us/app/uber-eats-food-delivery/id1058959277?mt=8" target="_blank"><img src="imgs/appstore.svg" alt="download UberEats app from appstore" /></a>
+						</div>
 						<div class="footer__downloads--btn">
-							<img src="imgs/googleplay.svg" alt="download UberEats app from google play" /></div>
+							<a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=uk" target="_blank"><img src="imgs/googleplay.svg" alt="download UberEats app from google play" /></a>
+						</div>
 					</div>
 					<div class="line"></div>
 					<div class="footer__bottom">
@@ -268,7 +270,7 @@
 				</div>
 			</section>
 			<div class="up-key">
-				<button class="up-key--button">↑</button>
+				<button class="up-key--button" aria-label="Roll to top">↑</button>
 			</div>
 	</section>
 	<script type="text/javascript" src="scripts.js"></script>
