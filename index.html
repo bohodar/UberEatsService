@@ -7,19 +7,20 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
 	<meta name="description" content="Користувацький макет сторінки сайту ubereats.com, зверстаний Колісником Богодаром, fe_on_feb19">
+	<link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
 </head>
 <body>
 	<section id="main-container">
 		<header id="top" class="top section">
-			<div class="top__leftbox">
+			<div class="top__leftbox top__path">
 				<a href="#top">
 					<img src="imgs/logo.svg" alt="" class="top__leftbox--logo" />
 				</a>
 			</div>
-			<div class="top__centerbox">
-				<div class="top__centerbox--time-selector">
-					<div class="top__centerbox--time-selector--innerbox">
-						<span class="top__centerbox--time-selector--value">
+			<div class="top__centerbox top__path">
+				<div class="top__time-selector">
+					<div class="top__time-wrapper">
+						<span class="top__time-selector--value">
 							ASAP
 						</span>
 					</div>
@@ -27,14 +28,14 @@
 				<span>
 					to
 				</span>
-				<div class="top__centerbox--address">
-					<div class="top__centerbox--address--img-wrapper">
-						<img class="top__centerbox--address--img" src="imgs/mark.svg">
+				<div class="top__address-delivery">
+					<div class="top__address-delivery--img-wrapper">
+						<img class="top__address-delivery--img" src="imgs/mark.svg">
 					</div>
-					<input type="text" name="choose a street" placeholder="ul. Tarasivska St, 16">
+					<input class="top__address-delivery--input" type="text" name="choose a street" placeholder="ul. Tarasivska St, 16">
 				</div>
 			</div>
-			<div class="top__rightbox">
+			<div class="top__rightbox top__path">
 				<div class="top__rightbox--block">
 					<button class="top__rightbox--button top__rightbox--sign-in">Sign In</button>
 				</div>
@@ -49,15 +50,34 @@
 		<section id="body">
 			<section id="body-block" class="body section">
 				<div class="body__top-path">
-					<form class="body__top-path--search-field">
-						<svg class="search-field-img" viewBox="0 0 32 32" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<desc>A magnifying glass icon used to indicate search input</desc>
-							<g>
-							  <path fill="inherit" d="M21.5,13.2c0-4.6-3.7-8.2-8.2-8.2C8.7,5,5,8.7,5,13.2c0,4.6,3.7,8.2,8.2,8.2c2,0,3.9-0.8,5.4-2l7.5,7.5 l0.9-0.9l-7.5-7.5C20.7,17.2,21.5,15.3,21.5,13.2z M13.2,20.2c-3.8,0-7-3.1-7-7c0-3.8,3.1-7,7-7s7,3.1,7,7 C20.2,17.1,17.1,20.2,13.2,20.2z"></path>
-							</g>
-		        		</svg>
-						<input class="search-field-input" type="text" placeholder="Search of restaurant ot cuisine" value="" />
-					</form>
+					<label class="search-field-label" for="search-field">
+						<form class="body__top-path--search-field">
+							<svg class="search-field-img" viewBox="0 0 32 32" width="30" height="30" version="1.1" xmlns="http://www.w3.org/2000/svg">
+								<desc>A magnifying glass icon used to indicate search input</desc>
+								<g>
+								  <path fill="inherit" d="M21.5,13.2c0-4.6-3.7-8.2-8.2-8.2C8.7,5,5,8.7,5,13.2c0,4.6,3.7,8.2,8.2,8.2c2,0,3.9-0.8,5.4-2l7.5,7.5 l0.9-0.9l-7.5-7.5C20.7,17.2,21.5,15.3,21.5,13.2z M13.2,20.2c-3.8,0-7-3.1-7-7c0-3.8,3.1-7,7-7s7,3.1,7,7 C20.2,17.1,17.1,20.2,13.2,20.2z"></path>
+								</g>
+			        		</svg>
+							<input class="search-field-input" type="text" placeholder="Search of restaurant ot cuisine" value="" />
+						</form>
+					</label>
+					<div class="body__top-path--where-time-block">
+						<div class="body__time-selector top__time-selector">
+							<span class="body__time-selector--label label">When</span>
+							<div class="body__time-selector--wrapper top__time-wrapper">
+								<span class="body__time-selector--value top__time-selector--value">
+									ASAP
+								</span>
+							</div>
+						</div>
+						<div class="body__address-selector">
+							<span class="body__address-delivery-label label">To</span>
+							<div class="body__address-delivery--img-wrapper top__address-delivery--img-wrapper">
+								<img class="body__address-delivery--img top__address-delivery--img" src="imgs/mark.svg">
+							</div>
+							<input class="body__address-delivery--input top__address-delivery--input" type="text" name="choose a street" placeholder="ul. Tarasivska St, 16">
+						</div>
+					</div>
 				</div>
 				<div class="body__heading">
 					<h1>Kyiv Restaurants</h1>
@@ -218,9 +238,9 @@
 							</div>
 						</div>
 						<div class="footer__titles__part footer__titles__middle-part">
-							<a href="javascipt.void(0)">About UberEats</a>
-							<a href="javascipt.void(0)">Become a Delivery Partner</a>
-							<a href="javascipt.void(0)">Become a Restaurant Partner</a>
+							<a href="javascript.void(0)">About UberEats</a>
+							<a href="javascript.void(0)">Become a Delivery Partner</a>
+							<a href="javascript.void(0)">Become a Restaurant Partner</a>
 						</div>
 						<div class="footer__titles__part footer__titles__right-part">
 							<a href="javascript.void(0)">See all cities</a>
@@ -250,7 +270,7 @@
 			<div class="up-key">
 				<button class="up-key--button">↑</button>
 			</div>
-</section>
+	</section>
 	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
