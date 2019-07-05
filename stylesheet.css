@@ -121,8 +121,6 @@ body {
     align-items: center;
 
     border: 1px solid #e0e0e0;
-
-    transition: 200ms;
 }
 
 .top__time-selector--value {
@@ -443,15 +441,13 @@ body {
     width: 33.33%;
     padding-left: 15px;
     margin-bottom: 32px;
-
-    transition: 300ms ease 0s;
 }
 
 .card-wrapper-link {
     line-height: 24px;
     font-size: 16px;
     width: 100%;
-    transition: 400ms ease 0s;
+    transition: transform 400ms ease 0s;
     text-decoration: none;
 }
 
