@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UberEats Service - Доставка їжі від ресторану до дому</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700" rel="stylesheet">
+    <meta name="description"
+          content="Користувацький макет сторінки сайту ubereats.com, зверстаний Колісником Богодаром, fe_on_feb19">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
+</head>
+<body>
+<section id="main-container">
+    <header id="top" class="top section">
+        <div class="top__leftbox top__path">
+            <a href="#main-container">
+                <img src="imgs/logo.svg" alt="Uber Eats Service, main page" class="top__leftbox--logo"/>
+            </a>
+        </div>
+        <div class="top__centerbox top__path">
+            <div class="top__time-selector">
+                <div class="top__time-wrapper active-wrapper">
+						<span class="top__time-selector--value">
+							ASAP
+						</span>
+                </div>
+            </div>
+            <span>to</span>
+            <form class="top__address-delivery">
+                <label class="top__address-delivery--label active-wrapper">
+                    <div class="top__address-delivery--img-wrapper">
+                        <img class="top__address-delivery--img" src="imgs/mark.svg" alt="address mark"/>
+                    </div>
+                    <input class="top__address-delivery--input" type="text" name="choose a street"
+                           placeholder="ul. Tarasivska St, 16">
+                </label>
+            </form>
+        </div>
+        <div class="top__rightbox top__path">
+            <div class="top__rightbox--block">
+                <button class="top__rightbox--button active-wrapper top__rightbox--sign-in">Sign In</button>
+            </div>
+            <div class="top__rightbox--block">
+                <button class="top__rightbox--button top__rightbox--register">Register</button>
+            </div>
+            <div class="top__rightbox--cart">
+                <img src="imgs/cart.svg" alt="cart"/>
+            </div>
+        </div>
+    </header>
+    <section id="body">
+        <section id="body-block" class="body section">
+            <div class="body__top-path">
+                <form class="body__top-path--search-field">
+                    <svg class="search-field-img" viewBox="0 0 32 32" width="30" height="30" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <desc>A magnifying glass icon used to indicate search input</desc>
+                        <g>
+                            <path fill="inherit"
+                                  d="M21.5,13.2c0-4.6-3.7-8.2-8.2-8.2C8.7,5,5,8.7,5,13.2c0,4.6,3.7,8.2,8.2,8.2c2,0,3.9-0.8,5.4-2l7.5,7.5 l0.9-0.9l-7.5-7.5C20.7,17.2,21.5,15.3,21.5,13.2z M13.2,20.2c-3.8,0-7-3.1-7-7c0-3.8,3.1-7,7-7s7,3.1,7,7 C20.2,17.1,17.1,20.2,13.2,20.2z"></path>
+                        </g>
+                    </svg>
+                    <input class="search-field-input" type="text" placeholder="Search of restaurant ot cuisine"
+                           value=""/>
+                </form>
+                <div class="body__top-path--where-time-block">
+                    <div class="body__time-selector top__time-selector">
+                        <span class="body__time-selector--label label">When</span>
+                        <div class="body__time-selector--wrapper top__time-wrapper">
+								<span class="body__time-selector--value top__time-selector--value">
+									ASAP
+								</span>
+                        </div>
+                    </div>
+                    <div class="body__address-selector">
+                        <span class="body__address-delivery-label label">To</span>
+                        <div class="body__address-delivery--img-wrapper top__address-delivery--img-wrapper">
+                            <img class="body__address-delivery--img top__address-delivery--img" src="imgs/mark.svg"
+                                 alt="address mark"/>
+                        </div>
+                        <input class="body__address-delivery--input top__address-delivery--input" type="text" name="choose a street" placeholder="ul. Tarasivska St, 16".>
+                    </div>
+                </div>
+            </div>
+            <div class="body__heading">
+                <h1>Kyiv Restaurants</h1>
+            </div>
+            <div class="body__main">
+                <div class="card-wrapper card-wrapper-01">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/mac.png')"></div>
+                        <div class="card-name">McDonald's</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372</span>
+                                <span class="card-kitchen">&#8226 Burgers</span>
+                            </p>
+                            <p class="card-timing">25 - 35 Min</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-wrapper card-wrapper-02">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/wokwei.png')"></div>
+                        <div class="card-name">WOKWEI</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372</span>
+                                <span class="card-kitchen">&#8226 Chinese</span>
+                                <span class="card-kitchen">&#8226 Korean</span>
+                            </p>
+                            <p class="card-timing">40 - 50 Min</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-wrapper card-wrapper-03">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/yizha.png')"></div>
+                        <div class="card-name">YIZHA</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372</span>
+                                <span class="card-kitchen">&#8226 American</span>
+                                <span class="card-kitchen">&#8226 HotDogs</span>
+                                <span class="card-kitchen">&#8226 StreetFood</span>
+                            </p>
+                            <p class="card-timing">35 - 45 Min</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-wrapper card-wrapper-04">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/musafir.png')"></div>
+                        <div class="card-name">Musafir (Saksahanskoho Str.)</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372&#8372</span>
+                                <span class="card-kitchen">&#8226 Middle Eastern</span>
+                            </p>
+                            <p class="card-timing">30 - 40 Min</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-wrapper card-wrapper-05">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/wokwei2.png')"></div>
+                        <div class="card-name">WOKWEI</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372</span>
+                                <span class="card-kitchen">&#8226 Chinese</span>
+                                <span class="card-kitchen">&#8226 Korean</span>
+                            </p>
+                            <p class="card-timing">40 - 50 Min</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-wrapper card-wrapper-06">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/milkbar.png')"></div>
+                        <div class="card-name">Milk Bar</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372&#8372</span>
+                                <span class="card-kitchen">&#8226 Deserts</span>
+                                <span class="card-kitchen">&#8226 European</span>
+                            </p>
+                            <p class="card-timing">25 - 35 Min</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-wrapper card-wrapper-07">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/mimosa.png')"></div>
+                        <div class="card-name">Mimosa Brooklyn Pizza</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372&#8372</span>
+                                <span class="card-kitchen">&#8226 Italian</span>
+                                <span class="card-kitchen">&#8226 Pizza</span>
+                                <span class="card-kitchen">&#8226 American</span>
+                            </p>
+                            <p class="card-timing">15 - 25 Min</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-wrapper card-wrapper-08">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/tobe.png')"></div>
+                        <div class="card-name">To Be</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372&#8372</span>
+                                <span class="card-kitchen">&#8226 Japan</span>
+                                <span class="card-kitchen">&#8226 Asian</span>
+                                <span class="card-kitchen">&#8226 Sushi</span>
+                            </p>
+                            <p class="card-timing">25 - 35 Min</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-wrapper card-wrapper-09">
+                    <a href="" class="card-wrapper-link">
+                        <div class="card-photo" style="background-image: url('imgs/druzicafe.png')"></div>
+                        <div class="card-name">DRUZI Cafe (Prorizna Str.)</div>
+                        <div class="card-description">
+                            <p>
+                                <span class="card-cost">&#8372&#8372</span>
+                                <span class="card-kitchen">&#8226 American</span>
+                                <span class="card-kitchen">&#8226 Modern European</span>
+                                <span class="card-kitchen">&#8226 Ukrainian</span>
+                            </p>
+                            <p class="card-timing">30 - 40 Min</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__in">
+                <img src="imgs/logobottom.svg" alt="" class="footer__main-logo"/>
+                <div class="line"></div>
+                <div class="footer__titles">
+                    <div class="footer__titles__part footer__titles__left-part">
+                        <div class="footer__titles__left-part--language">
+                            <form class="footer--form">
+                                <select class="footer--form--language-select">
+                                    <option value="en">English</option>
+                                    <option value="ge">German</option>
+                                    <option value="it">Italiano</option>
+                                </select>
+                            </form>
+                        </div>
+                        <div class="footer__titles__left-part--hashtag">
+                            <span><span style="color: #45a144">#</span>UberEats</span>
+                        </div>
+                        <div class="footer__titles__left-part--social-networks">
+                            <a target="_blank" href="https://www.facebook.com/ubereats"><img class="social-network-img"
+                                                                                             src="imgs/facebook.svg"
+                                                                                             alt="Our facebook off-group"/></a>
+                            <a target="_blank" href="https://www.twitter.com/ubereats"><img class="social-network-img"
+                                                                                            src="imgs/twitter.svg"
+                                                                                            alt="Our twitter off-group"/></a>
+                            <a target="_blank" href="https://www.instagram.com/ubereats"><img class="social-network-img"
+                                                                                              src="imgs/instagram.svg"
+                                                                                              alt="Our instagram off-channel"/></a>
+                        </div>
+                    </div>
+                    <div class="footer__titles__part footer__titles__middle-part">
+                        <a href="https://about.ubereats.com/" target="_blank">About UberEats</a>
+                        <a href="javascript.void(0)">Become a Delivery Partner</a>
+                        <a href="javascript.void(0)">Become a Restaurant Partner</a>
+                    </div>
+                    <div class="footer__titles__part footer__titles__right-part">
+                        <a href="javascript.void(0)">See all cities</a>
+                        <a href="javascript.void(0)">Pricing</a>
+                        <a href="javascript.void(0)">Help</a>
+                        <a href="javascript.void(0)">FAQs</a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="footer__downloads">
+                    <div class="footer__downloads--btn">
+                        <a href="https://itunes.apple.com/us/app/uber-eats-food-delivery/id1058959277?mt=8"
+                           target="_blank"><img src="imgs/appstore.svg" alt="download UberEats app from appstore"/></a>
+                    </div>
+                    <div class="footer__downloads--btn">
+                        <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=uk"
+                           target="_blank"><img src="imgs/googleplay.svg" alt="download UberEats app from google play"/></a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom--row">
+                        <a href="javascript:void(0)">@2019 Uber Technologies Inc.</a></div>
+                    <div class="footer__bottom--row">
+                        <a href="javascript:void(0)">Privacy Policy</a></div>
+                    <div class="footer__bottom--row">
+                        <a href="javascript:void(0)">Terms of Use</a></div>
+                </div>
+            </div>
+        </footer>
+        <div class="up-key">
+            <button class="up-key--button" aria-label="Roll to top">↑</button>
+        </div>
+    </section>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
